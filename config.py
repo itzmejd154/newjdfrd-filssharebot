@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6734478443:AAFJyqExvUDEvv57ki1GtV1p6gSwTBNzu8c")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7267321051:AAFFIf9EAJz8W8EsKkE66piGMmiiJBaJu8M")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "20652787"))
@@ -19,20 +19,20 @@ APP_ID = int(os.environ.get("APP_ID", "20652787"))
 API_HASH = os.environ.get("API_HASH", "5dea928561e4d2eb77a371edf8b2eb2a")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002066420558"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002172160050"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1357978966"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1461359037"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://evamusicbot:mrwaris04@cluster0.5ad8zuj.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "DP_BOTZ")
+DB_NAME = os.environ.get("DATABASE_NAME", "JDFRDDPBOTZ")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001828719686"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001914687456"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hᴇʟʟᴏ 👋 {first} ɪ ᴄᴀɴ ꜱᴛᴏʀᴇ Anime Toon Xyz ꜰɪʟᴇꜱ ✨ & ᴏᴛʜᴇʀ ᴜꜱᴇʀꜱ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ɪᴛ ꜰʀᴏᴍ ꜱᴩᴇᴄɪᴀʟ ʟɪɴᴋ 🔗")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1357978966 1242556540").split()):
+    for x in (os.environ.get("ADMINS", "1461359037").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
